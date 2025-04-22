@@ -61,6 +61,6 @@
     content: "Số lượng";
   }
   .room-list td:nth-of-type(3)::before {
-    content: "Đơn giá";
+    content: "Đơn giá(VNĐ)";
   }
 }
