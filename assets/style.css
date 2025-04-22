@@ -1,0 +1,66 @@
+.room-list {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.room-list table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px;
+}
+
+.room-list th,
+.room-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.room-list th {
+  background-color: #0073aa;
+  color: white;
+}
+
+.room-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 600px) {
+  .room-list table,
+  .room-list thead,
+  .room-list tbody,
+  .room-list th,
+  .room-list td,
+  .room-list tr {
+    display: block;
+  }
+
+  .room-list tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+
+  .room-list td {
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .room-list td::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .room-list td:nth-of-type(1)::before {
+    content: "Loại phòng";
+  }
+  .room-list td:nth-of-type(2)::before {
+    content: "Số lượng";
+  }
+  .room-list td:nth-of-type(3)::before {
+    content: "Đơn giá";
+  }
+}
